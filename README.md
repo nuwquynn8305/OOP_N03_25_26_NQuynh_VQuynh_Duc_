@@ -1,5 +1,6 @@
 # OOP_N03_25_26_NQuynh_VQuynh_Duc_
 Tên tiêu đề: Xây dựng website tìm kiếm việc làm trực tuyến (JobHub)
+
 Giới thiệu ngắn gọn về dự án: Dự án nhằm xây dựng một nền tảng kết nối ứng viên và doanh nghiệp tuyển dụng qua website.
 Ứng viên có thể tạo tài khoản, cập nhật hồ sơ, tìm kiếm việc làm, ứng tuyển trực tuyến.
 Doanh nghiệp có thể đăng tin tuyển dụng, quản lý hồ sơ ứng viên.
@@ -28,5 +29,6 @@ Cấu trúc thư mục:
 -	Ứng viên: Đăng ký/Đăng nhập, Tìm kiếm việc làm, Ứng tuyển, Quản lý hồ sơ.
 -	Doanh nghiệp: Đăng tin tuyển dụng, Quản lý việc làm, Xem hồ sơ ứng viên.
 -	Admin: Quản lý user, Quản lý công việc, Quản lý doanh nghiệp, Thống kê
+-	
 Sơ đồ class diagram:
 
