@@ -1,5 +1,5 @@
 # OOP_N03_25_26_NQuynh_VQuynh_Duc_
-**Tên tiêu đề**: Xây dựng website tìm kiếm việc làm trực tuyến (JobHub)
+## Tên tiêu đề: Xây dựng website tìm kiếm việc làm trực tuyến (JobHub)
 
 **Giới thiệu ngắn gọn về dự án**: Dự án nhằm xây dựng một nền tảng kết nối ứng viên và doanh nghiệp tuyển dụng qua website.
 Ứng viên có thể tạo tài khoản, cập nhật hồ sơ, tìm kiếm việc làm, ứng tuyển trực tuyến.
