@@ -168,5 +168,52 @@ const SidebarContent = () => {
             <FiBriefcase className="mr-3 h-5 w-5" />
             Doanh nghiệp
           </NavLink>
+          <NavLink
+            to="/ungtuyen"
+            className={({ isActive }) =>
+              `group flex items-center px-2 py-2 text-sm font-medium rounded-md ${
+                isActive
+                  ? 'bg-primary-100 text-primary-600'
+                  : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+              }`
+            }
+          >
+            <FiBriefcase className="mr-3 h-5 w-5" />
+            Ứng tuyển
+          </NavLink>
+            <NavLink
+            to="/user"
+            className={({ isActive }) =>
+              `group flex items-center px-2 py-2 text-sm font-medium rounded-md ${
+                isActive
+                  ? 'bg-primary-100 text-primary-600'
+                  : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+              }`
+            }
+          >
+            <FiUsers className="mr-3 h-5 w-5" />
+            Users
+          </NavLink>
+         
+            <NavLink
+            to="/loaiviec"
+            className={({ isActive }) =>
+              `group flex items-center px-2 py-2 text-sm font-medium rounded-md ${
+                isActive
+                  ? 'bg-primary-100 text-primary-600'
+                  : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+              }`
+            }
+          >
+            <FiMenu className="mr-3 h-5 w-5" />
+            Lĩnh Vực
+          </NavLink>
+        </nav>
+      </div>
+    </div>
+  );
+};
+
+export default DashboardLayout;
 
   
