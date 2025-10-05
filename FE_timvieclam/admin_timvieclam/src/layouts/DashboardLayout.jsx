@@ -105,4 +105,68 @@ const DashboardLayout = () => {
   );
 };
 
+const SidebarContent = () => {
+  return (
+    <div className="flex flex-col flex-grow">
+      <div className="flex items-center h-16 flex-shrink-0 px-4 bg-primary-600">
+        <h1 className="text-white font-semibold text-lg">Admin Panel</h1>
+      </div>
+      <div className="mt-5 flex-1 flex flex-col">
+        <nav className="flex-1 px-2 pb-4 space-y-1">
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              `group flex items-center px-2 py-2 text-sm font-medium rounded-md ${
+                isActive
+                  ? 'bg-primary-100 text-primary-600'
+                  : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+              }`
+            }
+          >
+            <FiHome className="mr-3 h-5 w-5" />
+            Dashboard
+          </NavLink>
+         
+        
+          <NavLink
+            to="/loaiviec"
+            className={({ isActive }) =>
+              `group flex items-center px-2 py-2 text-sm font-medium rounded-md ${
+                isActive
+                  ? 'bg-primary-100 text-primary-600'
+                  : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+              }`
+            }
+          >
+            <FiBriefcase className="mr-3 h-5 w-5" />
+            Job Types
+          </NavLink>
+          <NavLink
+            to="/vieclam"
+            className={({ isActive }) =>
+              `group flex items-center px-2 py-2 text-sm font-medium rounded-md ${
+                isActive
+                  ? 'bg-primary-100 text-primary-600'
+                  : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+              }`
+            }
+          >
+            <FiBriefcase className="mr-3 h-5 w-5" />
+            Việc làm
+          </NavLink>
+          <NavLink
+            to="/doanhnghiep"
+            className={({ isActive }) =>
+              `group flex items-center px-2 py-2 text-sm font-medium rounded-md ${
+                isActive
+                  ? 'bg-primary-100 text-primary-600'
+                  : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+              }`
+            }
+          >
+            <FiBriefcase className="mr-3 h-5 w-5" />
+            Doanh nghiệp
+          </NavLink>
+
   
