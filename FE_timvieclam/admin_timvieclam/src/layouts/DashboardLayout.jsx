@@ -196,7 +196,7 @@ const SidebarContent = () => {
           </NavLink>
          
             <NavLink
-            to="/loaiviec"
+            to="/linhvuc"
             className={({ isActive }) =>
               `group flex items-center px-2 py-2 text-sm font-medium rounded-md ${
                 isActive
