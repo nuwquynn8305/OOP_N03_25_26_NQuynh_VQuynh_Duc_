@@ -32,6 +32,9 @@ function App() {
           <Route path="loaiviec" element={<LoaiViecList />} />
           <Route path="loaiviec/create" element={<LoaiViecForm />} />
           <Route path="loaiviec/edit/:id" element={<LoaiViecForm />} />
+          <Route path="linhvuc" element={<LinhVucList />} />
+          <Route path="linhvuc/create" element={<LinhVucForm />} />
+          <Route path="linhvuc/edit/:id" element={<LinhVucForm />} />
           <Route path="vieclam" element={<ViecLamList />} />
           <Route path="vieclam/create" element={<ViecLamForm />} />
           <Route path="vieclam/edit/:id" element={<ViecLamForm />} />
