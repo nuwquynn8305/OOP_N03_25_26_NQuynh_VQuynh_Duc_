@@ -176,6 +176,7 @@ const CreateJob = () => {
    async function fetchData() {
      try {
        const jobRes = await axios.get(`${API_URL}/loaiviec`)
+       console.log('JOB_TYPES response:', jobRes)
        setJobTypes(jobRes.data.map(item => ({
          id: item.ma_loai_viec,
          name: item.ten_loai_viec.toUpperCase().replace(/\s/g, '_'),
@@ -197,6 +198,7 @@ const CreateJob = () => {
      }
    }
    fetchData()
+   console.log('JOB_TYPES after fetch:', jobTypes)
  }, [])
   const [formData, setFormData] = useState({
     ten_viec_lam: '',
@@ -219,6 +221,7 @@ const CreateJob = () => {
       [name]: value
     }))
     
+    console.log('Updated formData:', formData);
     // Clear error when field is updated
     if (errors[name]) {
       setErrors(prev => ({
