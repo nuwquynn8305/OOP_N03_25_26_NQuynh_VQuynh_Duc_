@@ -1,4 +1,4 @@
-# OOP_N03_25_26_NQuynh_VQuynh_Duc_
+<img width="761" height="343" alt="image" src="https://github.com/user-attachments/assets/9d12492d-af66-41e8-9679-ee9a91e08152" /># OOP_N03_25_26_NQuynh_VQuynh_Duc_
 # 🌐 JobHub — Website Tìm Kiếm Việc Làm Trực Tuyến  
 
 ## 🧩 Giới thiệu dự án  
@@ -10,36 +10,16 @@ Hệ thống còn có **quản trị viên (Admin)** giúp kiểm soát nội du
 
 ## 📋 Mục Lục
 
-- [✨ Tính Năng Chính](#-tính-năng-chính)
 - [🛠️ Công Nghệ Sử Dụng](#️-công-nghệ-sử-dụng)
 - [📦 Yêu Cầu Hệ Thống](#-yêu-cầu-hệ-thống)
 - [🧩 Phân Tích – Thiết Kế Và Cài Đặt Hệ Thống](#-phân-tích--thiết-kế-và-cài-đặt-hệ-thống)
+- [🏗️ Xây Dựng Ứng Dụng](#-xây-dựng-ứng-dụng)
 - [🚀 Giải Pháp Và Đóng Góp Nổi Bật](#-giải-pháp-và-đóng-góp-nổi-bật)
 - [🏁 Kết Luận Và Hướng Phát Triển](#-kết-luận-và-hướng-phát-triển)
 
----
-
-## ⚙️ Tính năng chính
-
-### 👩‍💼 Ứng viên (Người tìm việc)
-- Đăng ký / đăng nhập, chỉnh sửa hồ sơ cá nhân  
-- Tìm kiếm việc làm theo **từ khóa, ngành nghề, địa điểm, mức lương**  
-- Ứng tuyển trực tuyến, quản lý lịch sử và trạng thái ứng tuyển  
-- Lưu việc làm yêu thích, xem việc làm mới được cập nhật  
-
-### 🏢 Doanh nghiệp (Nhà tuyển dụng)
-- Đăng ký / đăng nhập tài khoản doanh nghiệp  
-- Đăng, chỉnh sửa và quản lý tin tuyển dụng  
-- Xem hồ sơ ứng viên và cập nhật trạng thái tuyển dụng  
-- Thống kê lượng ứng viên quan tâm và tỷ lệ ứng tuyển  
-
-### 🛠️ Quản trị viên (Admin)
-- Quản lý người dùng, doanh nghiệp, tin tuyển dụng  
-- Duyệt hoặc gỡ bỏ các nội dung vi phạm  
-- Quản lý danh mục lĩnh vực và loại công việc  
-- Xem thống kê toàn hệ thống (người dùng, công việc, đơn ứng tuyển...)  
 
 ---
+
 
 ## 💻 Công nghệ sử dụng  
 
@@ -100,3 +80,60 @@ Hệ thống còn có **quản trị viên (Admin)** giúp kiểm soát nội du
 **Sơ đồ class diagram**:
 
 ![image alt](https://github.com/nuwquynn8305/OOP_N03_25_26_NQuynh_VQuynh_Duc_/blob/b84c372f26edb093841cf86e1d04133c10d1f9ea/classs.jpg?raw=true)
+
+---
+
+## 🏗️ Xây Dựng Ứng Dụng
+
+### Kết Quả Đạt Được
+
+Sau quá trình tìm hiểu, nghiên cứu và phát triển, nhóm đã xây dựng thành công **website tìm kiếm việc làm trực tuyến – JobHub**, bao gồm ba vai trò chính: **Admin**, **Doanh nghiệp** và **Người tìm việc**.  
+Các chức năng chính của hệ thống đã được triển khai đầy đủ và áp dụng trên dữ liệu thực tế.
+
+---
+
+### Phía Quản Trị (Admin)
+- Quản lý tài khoản người dùng (ứng viên, doanh nghiệp)  
+- Quản lý việc làm và bài đăng tuyển dụng  
+- Quản lý thông tin doanh nghiệp  
+- Thống kê hệ thống (người dùng, tin tuyển, ứng tuyển)  
+- Quản lý lĩnh vực, ngành nghề  
+- Quản lý hồ sơ ứng tuyển  
+- Giám sát hoạt động toàn hệ thống  
+
+---
+
+### Phía Doanh Nghiệp (Employer)
+- Đăng ký / đăng nhập tài khoản doanh nghiệp  
+- Quản lý thông tin hồ sơ doanh nghiệp  
+- Đăng tin tuyển dụng mới  
+- Quản lý tin tuyển dụng (sửa, xóa, thay đổi trạng thái)  
+- Xem hồ sơ ứng viên ứng tuyển  
+
+---
+
+### Phía Người Tìm Việc (Job Seeker)
+- Đăng ký / đăng nhập tài khoản ứng viên  
+- Tạo và quản lý hồ sơ cá nhân (CV, thông tin, kỹ năng)  
+- Tìm kiếm việc làm theo từ khóa, ngành nghề, địa điểm  
+- Xem chi tiết thông tin việc làm  
+- Ứng tuyển trực tuyến  
+- Theo dõi trạng thái và lịch sử ứng tuyển  
+
+---
+
+Phần mềm đã được hoàn thiện với giao diện thân thiện, chức năng đầy đủ và cơ sở dữ liệu ổn định, đảm bảo khả năng mở rộng và vận hành thực tế.
+
+---
+
+### Minh Họa Giao Diện, Chức Năng Chính
+
+**Đối với người tìm việc chưa đăng nhập:** 
+*Giao diện đăng nhập*
+
+![image](<img width="761" height="343" alt="image" src="https://github.com/user-attachments/assets/b784f7cb-cb86-410d-b91d-bbb258f22aac" />
+)
+
+<p align="center"><em>Giao diện đăng nhập</em></p>
+
+
