@@ -1,4 +1,5 @@
-<img width="761" height="343" alt="image" src="https://github.com/user-attachments/assets/9d12492d-af66-41e8-9679-ee9a91e08152" /># OOP_N03_25_26_NQuynh_VQuynh_Duc_
+
+# OOP_N03_25_26_NQuynh_VQuynh_Duc_
 # 🌐 JobHub — Website Tìm Kiếm Việc Làm Trực Tuyến  
 
 ## 🧩 Giới thiệu dự án  
@@ -129,11 +130,153 @@ Phần mềm đã được hoàn thiện với giao diện thân thiện, chức
 ### Minh Họa Giao Diện, Chức Năng Chính
 
 **Đối với người tìm việc chưa đăng nhập:** 
-*Giao diện đăng nhập*
 
-![image](<img width="761" height="343" alt="image" src="https://github.com/user-attachments/assets/b784f7cb-cb86-410d-b91d-bbb258f22aac" />
-)
+<img width="761" height="343" alt="image" src="https://github.com/user-attachments/assets/9d12492d-af66-41e8-9679-ee9a91e08152" />
 
 <p align="center"><em>Giao diện đăng nhập</em></p>
+
+<img width="761" height="343" alt="image" src="https://github.com/user-attachments/assets/e2160c15-3294-42cd-9d10-0b110f89359c" />
+
+<p align="center"><em>Giao diện đăng ký</em></p>
+
+<img width="761" height="343" alt="image" src="https://github.com/user-attachments/assets/f6e47bbb-727b-4fb2-a360-4be72251433b" />
+
+<p align="center"><em>Giao diện trang chủ</em></p>
+
+<img width="761" height="345" alt="image" src="https://github.com/user-attachments/assets/6167bdb3-f40b-4c21-8314-a3f2381fb312" />
+
+<p align="center"><em>Giao diện hiển thị các lĩnh vực phổ biến</em></p>
+
+<img width="761" height="341" alt="image" src="https://github.com/user-attachments/assets/27f6c833-0fbb-4db9-a18f-7f594ddd3cb7" />
+
+<p align="center"><em>Giao diện tìm kiếm theo tên </em></p>
+
+<img width="761" height="343" alt="image" src="https://github.com/user-attachments/assets/c84676f1-b546-4bff-9236-68e6cddadf0d" />
+
+<p align="center"><em>Giao diện tìm kiếm theo loại công việc </em></p>
+
+<img width="761" height="343" alt="image" src="https://github.com/user-attachments/assets/888388c2-566a-46f3-a191-96f4633ee989" />
+
+<p align="center"><em>Giao diện xem chi tiết việc làm </em></p>
+
+<img width="761" height="344" alt="image" src="https://github.com/user-attachments/assets/3e88a363-a7c5-4ee9-9c2e-57c91d546c96" />
+
+<p align="center"><em>Giao diện xem thông tin công ty</em></p>
+
+<img width="761" height="343" alt="image" src="https://github.com/user-attachments/assets/19896c96-9465-4300-af8d-4176687c0424" />
+
+<p align="center"><em>Giao diện xem các công ty được đề cử</em></p>
+
+**Đối với người dùng đã đăng nhập:** 
+
+<img width="761" height="344" alt="image" src="https://github.com/user-attachments/assets/80c6720e-8463-4d48-9be4-84827f42debf" />
+
+<p align="center"><em>Giao diện trang cá nhân của người dùng</em></p>
+
+<img width="761" height="345" alt="image" src="https://github.com/user-attachments/assets/70aeca60-1fd7-4580-b224-c2691e911274" />
+
+<p align="center"><em>Giao diện chỉnh sửa trang cá nhân</em></p>
+
+<img width="761" height="345" alt="image" src="https://github.com/user-attachments/assets/470596e1-9a73-47db-8ecc-ac58e8728fb3" />
+
+<p align="center"><em>Giao diện xem lịch sử việc làm đã đăng ký</em></p>
+
+<img width="761" height="343" alt="image" src="https://github.com/user-attachments/assets/8b40cc26-b3d5-4c04-888c-3c2ebeab6581" />
+
+<p align="center"><em>Giao diện ứng tuyển việc làm</em></p>
+
+**Đối với doanh nghiệp:**
+
+<img width="761" height="344" alt="image" src="https://github.com/user-attachments/assets/57c0ddb3-1df1-4bea-a138-c5a6bd558068" />
+
+<p align="center"><em>Giao diện đăng ký của doanh nghiệp</em></p>
+
+<img width="761" height="345" alt="image" src="https://github.com/user-attachments/assets/2a7bfd5c-7123-4191-a848-ce0c48b1a8cf" />
+
+<p align="center"><em>Giao diện trang chủ của doanh nghiệp</em></p>
+
+<img width="761" height="345" alt="image" src="https://github.com/user-attachments/assets/9a9a37b2-0bec-42a1-8fda-b8d0f677a85b" />
+
+<p align="center"><em>Giao diện những công việc doanh nghiệp còn tuyển</em></p>
+
+<img width="761" height="343" alt="image" src="https://github.com/user-attachments/assets/5a720b25-7ea6-4328-b656-97d20c4756e6" />
+
+<p align="center"><em>Giao diện những công việc đã đóng</em></p>
+
+<img width="761" height="342" alt="image" src="https://github.com/user-attachments/assets/118d7633-1eec-454f-af76-2411ba3aafad" />
+
+<p align="center"><em>Giao diện trang cá nhân của doanh nghiệp</em></p>
+
+<img width="761" height="343" alt="image" src="https://github.com/user-attachments/assets/69d7a632-ecda-40af-9251-138be2f8bbc8" />
+<img width="761" height="313" alt="image" src="https://github.com/user-attachments/assets/62c1302a-e1cc-4409-bf57-53aa3f1bca07" />
+
+<p align="center"><em>Giao diện tạo công việc của doanh nghiệp</em></p>
+
+<img width="761" height="344" alt="image" src="https://github.com/user-attachments/assets/ed35824c-bf01-44c9-b4a2-c85e799ef9c3" />
+
+<p align="center"><em>Giao diện quản lý đơn ứng tuyển</em></p>
+
+<img width="761" height="342" alt="image" src="https://github.com/user-attachments/assets/85848f27-51cd-41f4-8305-e20cc7e9cba4" />
+
+<p align="center"><em>Giao diện xem chi tiết công việc đã đăng</em></p>
+
+**Đối với Admin:**
+
+<img width="761" height="342" alt="image" src="https://github.com/user-attachments/assets/af0e20d2-5258-455c-a1f8-4b2a87be0b73" />
+
+<p align="center"><em>Giao diện tổng quan dữ liệu</em></p>
+
+<img width="761" height="342" alt="image" src="https://github.com/user-attachments/assets/685cccb2-94cd-40d9-9d9c-d95082cd49b2" />
+
+<p align="center"><em>Giao diện quản lý loại công việc</em></p>
+
+<img width="761" height="343" alt="image" src="https://github.com/user-attachments/assets/688fc409-2ff9-4d48-a941-935fcc9a24e8" />
+
+<p align="center"><em>Giao diện quản lý việc làm</em></p>
+
+<img width="761" height="342" alt="image" src="https://github.com/user-attachments/assets/ea138538-f7fb-4d34-9001-725ba588cedd" />
+
+<p align="center"><em>Giao diện quản lý doanh nghiệp</em></p>
+
+<img width="761" height="344" alt="image" src="https://github.com/user-attachments/assets/9df65d0d-30dc-437e-b975-af9bb52c82a3" />
+
+<p align="center"><em>Giao diện quản lý đơn ứng tuyển</em></p>
+
+<img width="761" height="344" alt="image" src="https://github.com/user-attachments/assets/f8454ba2-bdee-4a11-98fa-6d3fcda25c02" />
+
+<p align="center"><em>Giao diện quản lý lĩnh vực</em></p>
+
+<img width="761" height="343" alt="image" src="https://github.com/user-attachments/assets/cafc206a-baeb-459c-96fd-66d4aeb09692" />
+
+<p align="center"><em>Giao diện quản lý Users</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
