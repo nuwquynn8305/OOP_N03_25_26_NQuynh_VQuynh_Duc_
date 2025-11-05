@@ -342,6 +342,98 @@ Giao diện admin chạy tại:
 
 <img width="611" height="234" alt="image" src="https://github.com/user-attachments/assets/a7c5c5d1-6dfb-48ec-93de-4c3a5927a7ec" />
 
+|:--|:--|
+| **ID** | UC02 |
+| **Name** | Đăng nhập hệ thống |
+| **Brief description** | Người dùng nhập thông tin tài khoản đã đăng ký (email và mật khẩu) để truy cập vào hệ thống và sử dụng các chức năng tương ứng với quyền hạn của mình. |
+| **Actors** | Ứng viên / Doanh nghiệp |
+| **Pre-conditions** | Người dùng đã đăng ký tài khoản. |
+| **Basic flow** | 1. Người dùng truy cập trang **Đăng nhập**.<br>2. Người dùng nhập **email/tên đăng nhập** và **mật khẩu**.<br>3. Người dùng nhấn nút **“Đăng nhập”**.<br>4. Hệ thống kiểm tra thông tin:<br>&nbsp;&nbsp;&nbsp;• Nếu hợp lệ → chuyển đến **trang cá nhân tương ứng**.<br>&nbsp;&nbsp;&nbsp;• Nếu không hợp lệ → hiển thị **thông báo lỗi**. |
+| **Alternative flow** | None |
+| **Result** | Người dùng đăng nhập vào hệ thống thành công. |
+| **Exceptions** | 2.1. Thông tin người dùng nhập không đúng:<br>&nbsp;&nbsp;&nbsp;• Nhập **email** không đúng hoặc chưa tồn tại.<br>&nbsp;&nbsp;&nbsp;• Nhập **mật khẩu** không trùng khớp với tài khoản đã đăng ký.<br>2.2. Hệ thống yêu cầu người dùng **nhập lại thông tin** để đăng nhập.<br>2.3. Người dùng nhập đúng tất cả thông tin để tiếp tục các bước tiếp theo. |
+
+### *c.Usecase quản lý thông tin*
+<img width="746" height="294" alt="image" src="https://github.com/user-attachments/assets/4b54808f-977f-4d00-94c6-87c66ca26263" />
+
+|:--|:--|
+| **ID** | UC03 |
+| **Name** | Quản lý thông tin |
+| **Brief description** | Người dùng (ứng viên hoặc doanh nghiệp) có thể xem, chỉnh sửa và cập nhật các thông tin cá nhân đã đăng ký trên hệ thống. |
+| **Actors** | Ứng viên / Doanh nghiệp |
+| **Pre-conditions** | Người dùng đã đăng nhập vào hệ thống. |
+| **Basic flow** | 1. Người dùng đăng nhập vào hệ thống.<br>2. Người dùng truy cập mục **“Thông tin cá nhân”** trong trang cá nhân.<br>3. Hệ thống hiển thị **thông tin cá nhân hiện tại**.<br>4. Người dùng chọn **“Chỉnh sửa thông tin”** và cập nhật các trường cần thiết (họ tên, email, số điện thoại, địa chỉ, ảnh đại diện, mô tả bản thân, …).<br>5. Người dùng nhấn **“Lưu thay đổi”**.<br>6. Hệ thống hiển thị lại thông tin sau khi chỉnh sửa. |
+| **Alternative flow** | None |
+| **Result** | Thông tin người dùng được cập nhật thành công. |
+| **Exceptions** | None |
+
+### d.Usecase tìm kiếm việc làm 
+<img width="488" height="229" alt="image" src="https://github.com/user-attachments/assets/cd234c25-f62c-409e-bccb-d0977aca1b70" />
+
+|:--|:--|
+| **ID** | UC04 |
+| **Name** | Tìm kiếm việc làm |
+| **Brief description** | Ứng viên sử dụng hệ thống để tìm các tin tuyển dụng phù hợp dựa trên từ khóa hoặc các tiêu chí tìm kiếm nâng cao như ngành nghề, địa điểm,... |
+| **Actors** | Ứng viên / Doanh nghiệp |
+| **Pre-conditions** | Người dùng đã đăng nhập vào hệ thống (hoặc có thể tìm kiếm ở chế độ khách với chức năng giới hạn). |
+| **Basic flow** | 1. Ứng viên truy cập chức năng **“Tìm kiếm việc làm”**.<br>2. Hệ thống hiển thị **ô tìm kiếm và các bộ lọc** (ngành nghề, vị trí, mức lương, kinh nghiệm, ...).<br>3. Ứng viên **nhập từ khóa** hoặc **chọn bộ lọc phù hợp**.<br>4. Ứng viên nhấn nút **“Tìm kiếm”**.<br>5. Hệ thống xử lý và **trả về danh sách kết quả phù hợp**.<br>6. Ứng viên **xem danh sách kết quả** và có thể chọn tin để xem chi tiết. |
+| **Alternative flow** | None |
+| **Result** | Hệ thống hiển thị danh sách công việc phù hợp theo tiêu chí tìm kiếm. |
+| **Exceptions** | Nếu không tìm thấy kết quả phù hợp → Hệ thống hiển thị **màn hình trống hoặc thông báo “Không tìm thấy kết quả phù hợp.”** |
+
+### *e. Usecase ứng tuyển việc làm*
+<img width="519" height="178" alt="image" src="https://github.com/user-attachments/assets/083da1c4-b81f-489a-873d-0c828421b296" />
+
+|:--|:--|
+| **ID** | UC05 |
+| **Name** | Ứng tuyển việc làm |
+| **Brief description** | Ứng viên chọn một tin tuyển dụng và gửi hồ sơ ứng tuyển đến doanh nghiệp thông qua hệ thống. |
+| **Actors** | Ứng viên |
+| **Pre-conditions** | 1. Ứng viên đã đăng nhập vào hệ thống.<br>2. Tin tuyển dụng còn hiệu lực (chưa hết hạn). |
+| **Basic flow** | 1. Ứng viên tìm kiếm và chọn tin tuyển dụng mong muốn.<br>2. Hệ thống hiển thị chi tiết tin tuyển dụng.<br>3. Ứng viên nhấn nút **“Ứng tuyển ngay”**.<br>4. Hệ thống hiển thị **bảng ứng tuyển**.<br>5. Ứng viên điền thông tin: họ tên, email, câu hỏi cho nhà tuyển dụng, tải CV mới từ máy tính.<br>6. Ứng viên **xác nhận gửi hồ sơ**.<br>7. Hệ thống **lưu hồ sơ và thông báo ứng tuyển thành công**.<br>8. Doanh nghiệp **nhận hồ sơ mới** từ ứng viên. |
+| **Alternative flow** | None |
+| **Result** | Ứng tuyển thành công, hồ sơ của ứng viên được gửi đến doanh nghiệp. |
+| **Exceptions** | - Nếu ứng viên **chưa đăng nhập** → Hệ thống hiển thị thông báo lỗi.<br>- Nếu **chưa tải hoặc cập nhật CV** → Hệ thống yêu cầu bổ sung CV.<br>- Nếu **tin tuyển dụng đã hết hạn hoặc bị ẩn** → Hệ thống không cho phép ứng tuyển. |
+
+### *f.Usecase xem chi tiết việc làm*
+<img width="473" height="277" alt="image" src="https://github.com/user-attachments/assets/92dea19e-4829-40bd-b795-40453d8e412d" />
+
+|:--|:--|
+| **ID** | UC06 |
+| **Name** | Xem chi tiết việc làm |
+| **Brief description** | Ứng viên chọn một tin tuyển dụng từ danh sách và xem đầy đủ thông tin chi tiết về vị trí công việc, yêu cầu, thông tin doanh nghiệp. |
+| **Actors** | Ứng viên / Doanh nghiệp |
+| **Pre-conditions** | 1. Tin tuyển dụng tồn tại trong hệ thống.<br>2. Ứng viên truy cập được vào website. |
+| **Basic flow** | 1. Ứng viên tìm kiếm hoặc chọn việc làm từ danh sách hiển thị.<br>2. Hệ thống hiển thị trang **chi tiết việc làm**, bao gồm:<br>• Tên công việc<br>• Mức lương<br>• Mô tả công việc<br>• Yêu cầu công việc<br>• Địa điểm làm việc<br>• Thông tin doanh nghiệp (logo, mô tả, địa chỉ, website,...) |
+| **Alternative flow** | None |
+| **Result** | Hiển thị thông tin chi tiết của công việc mà ứng viên đã chọn. |
+| **Exceptions** | None |
+
+
+### *g.Usecase xem hồ sơ ứng viên*
+<img width="574" height="196" alt="image" src="https://github.com/user-attachments/assets/17bc967f-d641-48c6-95f1-8624d459fa7c" />
+
+|:--|:--|
+| **ID** | UC07 |
+| **Name** | Xem hồ sơ ứng viên |
+| **Brief description** | Nhà tuyển dụng đăng nhập vào hệ thống, truy cập danh sách ứng viên đã ứng tuyển hoặc tìm kiếm ứng viên, sau đó xem chi tiết hồ sơ để đánh giá. |
+| **Actors** | Doanh nghiệp |
+| **Pre-conditions** | 1. Doanh nghiệp đã đăng nhập hệ thống.<br>2. Ứng viên đã ứng tuyển công việc và tải CV lên. |
+| **Basic flow** | 1. Nhà tuyển dụng đăng nhập vào hệ thống.<br>2. Nhà tuyển dụng truy cập:<br>• Trang công việc đã đăng.<br>• Danh sách ứng viên đã ứng tuyển vào việc làm của mình.<br>3. Hệ thống hiển thị thông tin hồ sơ gồm:<br>• Thông tin cá nhân (họ tên, ngày sinh, địa chỉ, liên hệ).<br>• Câu hỏi đặt cho nhà tuyển dụng.<br>4. Nhà tuyển dụng chọn **“View Resume”** để xem CV của ứng viên.<br>5. Nhà tuyển dụng có thể:<br>• Đặt trạng thái hồ sơ ứng viên.<br>• Liên hệ với ứng viên qua email nếu thấy phù hợp. |
+| **Alternative flow** | None |
+| **Result** | Hiển thị đầy đủ thông tin hồ sơ mà ứng viên đã ứng tuyển. |
+| **Exceptions** | None |
+
+### *h.Usecase đăng tin tuyển 
+
+
+
+
+
+
+
+
+
 
 **Sơ đồ class diagram**:
 
