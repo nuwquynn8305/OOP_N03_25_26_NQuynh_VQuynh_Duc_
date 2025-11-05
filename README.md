@@ -13,10 +13,12 @@ Hệ thống còn có **quản trị viên (Admin)** giúp kiểm soát nội du
 
 - [🛠️ Công Nghệ Sử Dụng](#️-công-nghệ-sử-dụng)
 - [📦 Yêu Cầu Hệ Thống](#-yêu-cầu-hệ-thống)
+- [🚀 Hướng Dẫn Cài Đặt](#-hướng-dẫn-cài-đặt)
 - [🧩 Phân Tích – Thiết Kế Và Cài Đặt Hệ Thống](#-phân-tích--thiết-kế-và-cài-đặt-hệ-thống)
 - [🏗️ Xây Dựng Ứng Dụng](#-xây-dựng-ứng-dụng)
 - [🚀 Giải Pháp Và Đóng Góp Nổi Bật](#-giải-pháp-và-đóng-góp-nổi-bật)
 - [🏁 Kết Luận Và Hướng Phát Triển](#-kết-luận-và-hướng-phát-triển)
+
 
 
 ---
@@ -68,15 +70,143 @@ Hệ thống còn có **quản trị viên (Admin)** giúp kiểm soát nội du
 
 ---
 
-**Cài đặt và chạy**:
+## 💼 Hướng Dẫn Cài Đặt & Chạy Ứng Dụng Tìm Việc Làm
+
 -	  Clone project về máy.
 -	  Frontend (ReactJS)
 -	  Backend (Spring Boot + Java) 
 -	  Database (MySQL):
--	Tạo schema jobhub
--	Import file jobhub.sql
--	Cấu hình application.properties trong Spring Boot để kết nối DB.
--	
+	  
+### 🧱 1. Cấu Trúc Hệ Thống Tổng Thể
+
+Hệ thống gồm **hai phần chính**:
+
+**🖥️ Frontend (Giao diện người dùng)**
+**Thư mục:** `FE_timvieclam`
+
+- **`admin_timvieclam`** → Giao diện **quản trị viên**
+- **`fe_timvieclam`** → Giao diện **người dùng**
+- **`tuyendung_timvieclam`** → Giao diện **doanh nghiệp**
+
+**⚙️ Backend (Máy chủ xử lý dữ liệu)**
+**Thư mục:** `WebTimViecLam` (dự án **Java Spring Boot**)
+
+- Kết nối cơ sở dữ liệu **MySQL**
+- Cung cấp **API** cho frontend giao tiếp
+
+---
+
+### 🧩 2. Yêu Cầu Môi Trường
+
+**🔹 Frontend**
+
+| Thành phần | Phiên bản yêu cầu | Ghi chú |
+|-------------|------------------|----------|
+| Node.js | ≥ **v16.0.0** | Bắt buộc |
+| npm | ≥ **v8.0.0** | Bắt buộc |
+| IDE khuyên dùng | **Visual Studio Code** |  |
+
+**🔹 Backend**
+
+| Thành phần | Phiên bản yêu cầu | Ghi chú |
+|-------------|------------------|----------|
+| JDK | ≥ **17** | Bắt buộc |
+| Maven | ≥ **3.8** | Bắt buộc |
+| IDE khuyên dùng | **IntelliJ IDEA** / **Eclipse** |  |
+| MySQL | ≥ **8.0** |  |
+
+---
+
+## 🧮 4. Cài Đặt & Chạy Backend (Spring Boot)
+
+**Bước 1:** Mở thư mục `WebTimViecLam` trong IDE (Eclipse hoặc IntelliJ)
+
+**Bước 2:** Cài đặt dependencies:
+
+```bash
+mvn clean install
+```
+Bước 3: Chạy ứng dụng:
+
+```bash
+mvn spring-boot:run
+```
+
+Hoặc nhấn Run Application trong IDE.
+
+Bước 4: Kiểm tra backend hoạt động tại:
+👉 http://localhost:8080
+
+---
+
+### 🌐 5. Cài Đặt & Chạy Frontend (ReactJS)
+a. Giao diện người dùng (fe_timvieclam)
+
+Bước 1: Mở thư mục:
+
+FE_timvieclam/fe_timvieclam
+
+
+Bước 2: Cài đặt các package:
+
+```bash
+npm install
+```
+
+Bước 3: Chạy ứng dụng:
+
+```bash
+npm run dev
+```
+
+Ứng dụng chạy tại:
+👉 http://localhost:5173
+
+b. Giao diện quản trị viên (admin_timvieclam)
+
+Bước 1: Mở thư mục:
+
+FE_timvieclam/admin_timvieclam
+
+
+Bước 2: Cài đặt dependencies:
+
+```bash
+npm install
+```
+
+Bước 3: Chạy ứng dụng:
+
+```bash
+npm run dev
+```
+
+Giao diện admin chạy tại:
+👉 http://localhost:5174
+
+c. Giao diện doanh nghiep (tuyendung_timvieclam)
+
+Bước 1: Mở thư mục:
+
+FE_timvieclam/tuyendung_timvieclam
+
+
+Bước 2: Cài đặt dependencies:
+
+```bash
+npm install
+```
+
+Bước 3: Chạy ứng dụng:
+
+```bash
+npm run dev
+```
+
+Giao diện admin chạy tại:
+👉 http://localhost:5175
+
+---
 
 **Sơ đồ class diagram**:
 
