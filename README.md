@@ -356,8 +356,8 @@ Giao diện admin chạy tại:
 ### *c.Usecase quản lý thông tin*
 <img width="746" height="294" alt="image" src="https://github.com/user-attachments/assets/4b54808f-977f-4d00-94c6-87c66ca26263" />
 
-|:--|:--|
 | **ID** | UC03 |
+|:--|:--|
 | **Name** | Quản lý thông tin |
 | **Brief description** | Người dùng (ứng viên hoặc doanh nghiệp) có thể xem, chỉnh sửa và cập nhật các thông tin cá nhân đã đăng ký trên hệ thống. |
 | **Actors** | Ứng viên / Doanh nghiệp |
@@ -370,8 +370,8 @@ Giao diện admin chạy tại:
 ### d.Usecase tìm kiếm việc làm 
 <img width="488" height="229" alt="image" src="https://github.com/user-attachments/assets/cd234c25-f62c-409e-bccb-d0977aca1b70" />
 
-|:--|:--|
 | **ID** | UC04 |
+|:--|:--|
 | **Name** | Tìm kiếm việc làm |
 | **Brief description** | Ứng viên sử dụng hệ thống để tìm các tin tuyển dụng phù hợp dựa trên từ khóa hoặc các tiêu chí tìm kiếm nâng cao như ngành nghề, địa điểm,... |
 | **Actors** | Ứng viên / Doanh nghiệp |
@@ -384,8 +384,8 @@ Giao diện admin chạy tại:
 ### *e. Usecase ứng tuyển việc làm*
 <img width="519" height="178" alt="image" src="https://github.com/user-attachments/assets/083da1c4-b81f-489a-873d-0c828421b296" />
 
-|:--|:--|
 | **ID** | UC05 |
+|:--|:--|
 | **Name** | Ứng tuyển việc làm |
 | **Brief description** | Ứng viên chọn một tin tuyển dụng và gửi hồ sơ ứng tuyển đến doanh nghiệp thông qua hệ thống. |
 | **Actors** | Ứng viên |
@@ -398,8 +398,8 @@ Giao diện admin chạy tại:
 ### *f.Usecase xem chi tiết việc làm*
 <img width="473" height="277" alt="image" src="https://github.com/user-attachments/assets/92dea19e-4829-40bd-b795-40453d8e412d" />
 
-|:--|:--|
 | **ID** | UC06 |
+|:--|:--|
 | **Name** | Xem chi tiết việc làm |
 | **Brief description** | Ứng viên chọn một tin tuyển dụng từ danh sách và xem đầy đủ thông tin chi tiết về vị trí công việc, yêu cầu, thông tin doanh nghiệp. |
 | **Actors** | Ứng viên / Doanh nghiệp |
@@ -413,8 +413,9 @@ Giao diện admin chạy tại:
 ### *g.Usecase xem hồ sơ ứng viên*
 <img width="574" height="196" alt="image" src="https://github.com/user-attachments/assets/17bc967f-d641-48c6-95f1-8624d459fa7c" />
 
-|:--|:--|
+
 | **ID** | UC07 |
+|:--|:--|
 | **Name** | Xem hồ sơ ứng viên |
 | **Brief description** | Nhà tuyển dụng đăng nhập vào hệ thống, truy cập danh sách ứng viên đã ứng tuyển hoặc tìm kiếm ứng viên, sau đó xem chi tiết hồ sơ để đánh giá. |
 | **Actors** | Doanh nghiệp |
