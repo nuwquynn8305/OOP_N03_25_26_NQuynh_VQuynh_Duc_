@@ -12,7 +12,7 @@ Hệ thống còn có **quản trị viên (Admin)** giúp kiểm soát nội du
 ## 📋 Mục Lục
 
 - [🛠️ Công Nghệ Sử Dụng](#️-công-nghệ-sử-dụng)
-- [📦 Yêu Cầu Hệ Thống](#-yêu-cầu-hệ-thống)
+- [📊 Khảo Sát Và Phân Tích Yêu Cầu](#-khảo-sát-và-phân-tích-yêu-cầu)
 - [🚀 Hướng Dẫn Cài Đặt](#-hướng-dẫn-cài-đặt)
 - [🧩 Phân Tích – Thiết Kế Và Cài Đặt Hệ Thống](#-phân-tích--thiết-kế-và-cài-đặt-hệ-thống)
 - [🏗️ Xây Dựng Ứng Dụng](#-xây-dựng-ứng-dụng)
@@ -20,57 +20,163 @@ Hệ thống còn có **quản trị viên (Admin)** giúp kiểm soát nội du
 - [🏁 Kết Luận Và Hướng Phát Triển](#-kết-luận-và-hướng-phát-triển)
 
 
+---
+
+## I.🧩 Khảo sát và phân tích yêu cầu 
+
+### 1.Khảo sát hiện trạng 
+**👥 Nhu cầu người dùng**
+
+Người tìm việc cần một nền tảng trực tuyến dễ sử dụng, tìm kiếm nhanh theo chuyên môn, kỹ năng, vị trí và cho phép tạo – quản lý CV, ứng tuyển trực tuyến, theo dõi trạng thái hồ sơ.
+
+Nhà tuyển dụng mong muốn hệ thống giúp đăng tin nhanh, quản lý ứng viên hiệu quả, tìm kiếm theo tiêu chí cụ thể, và tiết kiệm thời gian tuyển dụng.
+
+**🌐 Khảo sát hệ thống hiện có**
+
+Các nền tảng phổ biến như VietnamWorks, TopCV, CareerBuilder đã cung cấp nhiều tiện ích nhưng vẫn tồn tại hạn chế:
+- Giao diện chưa thân thiện với người dùng mới.
+- Chi phí dịch vụ cao đối với doanh nghiệp nhỏ.
+- Tốc độ tìm kiếm chưa tối ưu, lọc thông tin chưa chính xác.
+Vì vậy, đề tài hướng đến việc xây dựng hệ thống tìm việc làm trực tuyến mới với:
+- Giao diện thân thiện hơn
+- Hiệu suất tốt hơn 
+- Trải nghiệm cá nhân hóa cho từng nhóm người dùng.
+
+--- 
+
+### 2.Phân tích yêu cầu 
+> Dựa trên kết quả khảo sát, nhóm tiến hành phân tích yêu cầu để xác định các chức năng cần thiết cho hệ thống mới. Mục tiêu của việc phân tích yêu cầu là đảm bảo hệ thống mới sẽ đáp ứng được các nhu cầu của người dùng, cải thiện trải nghiệm và hiệu suất làm việc.
+
+### a.🔹 Yêu cầu chức năng
+
+### 🧑‍💼 Từ phía Khách hàng
+
+- Đăng ký / Đăng nhập / Đăng xuất tài khoản bằng email và mật khẩu.
+- Quản lý thông tin cá nhân: cập nhật họ tên, số điện thoại, địa chỉ, kỹ năng, tiểu sử,...
+- Tìm kiếm việc làm: theo từ khóa, vị trí, ngành nghề hoặc tên công ty.
+- Xem chi tiết việc làm: hiển thị đầy đủ mô tả, yêu cầu và quyền lợi.
+- Ứng tuyển trực tuyến: gửi CV trực tiếp qua hệ thống.
+> Theo dõi hồ sơ ứng tuyển: xem danh sách công việc đã nộp và trạng thái hồ sơ (đang xem, phỏng vấn, từ chối,...).
+
+### 🏢 Từ phía Doanh nghiệp
+
+- Đăng ký / Đăng nhập / Đăng xuất tài khoản doanh nghiệp.
+- Quản lý hồ sơ công ty: cập nhật thông tin, logo, mô tả, tài liệu giới thiệu.
+- Đăng và quản lý tin tuyển dụng: thêm, sửa, xoá, cập nhật trạng thái tin tuyển dụng.
+- Quản lý hồ sơ ứng tuyển: xem, lọc và cập nhật trạng thái đơn ứng tuyển.
+
+### 🛠️ Từ phía Quản trị viên (Admin)
+
+> Thống kê tổng quan: xem tổng số người dùng, doanh nghiệp, việc làm, đơn ứng tuyển, loại công việc,...
+- Quản lý danh mục loại công việc: thêm, sửa, xoá (full-time, part-time, freelance,...).
+- Quản lý việc làm: chỉnh sửa hoặc xoá công việc do doanh nghiệp đăng.
+- Quản lý doanh nghiệp: thêm, sửa, xoá thông tin doanh nghiệp.
+- Quản lý đơn ứng tuyển: xem, lọc, xoá những đơn không phù hợp.
+- Quản lý lĩnh vực công việc: thêm, sửa, xoá các lĩnh vực nghề nghiệp.
+
+### b. 🧩 Yêu cầu phi chức năng
+
+### Yêu cầu xử lý logic và nhập liệu
+- Ứng dụng **phân quyền người dùng** theo từng chức năng, nhiệm vụ và vai trò.  
+- Hệ thống **hiển thị dữ liệu phù hợp** theo nhu cầu và quyền truy cập của từng người dùng.  
+- Cung cấp **chức năng tìm kiếm và sắp xếp dữ liệu** linh hoạt.  
+- **Dữ liệu được sao lưu định kỳ**, đảm bảo khả năng **phục hồi khi gặp sự cố**.  
+- **Giao diện thân thiện, dễ sử dụng** và tối ưu trải nghiệm người dùng.  
+
+###  Yêu cầu chung
+- Các **ô nhập liệu** phải tuân thủ các nguyên tắc sau:  
+  1. **Kiểm tra ràng buộc dữ liệu** trước khi lưu; hiển thị lỗi nếu dữ liệu không hợp lệ.  
+  2. Với **dữ liệu dạng lựa chọn (option)**, cung cấp **tìm kiếm nhanh** để hỗ trợ khi số lượng dữ liệu lớn.  
+  3. Với **dữ liệu ngày/tháng/năm**, sử dụng **bộ chọn ngày (datepicker)** thay vì nhập tay để đảm bảo tính chính xác.
+  
+ ---
+  
+## II.💻 Công nghệ sử dụng  
+
+- [⚛️ ReactJS](#️-reactjs)
+- [☕ Ngôn Ngữ Lập Trình Java](#-ngôn-ngữ-lập-trình-java)
+- [🌱 Spring Framework](#-spring-framework)
+- [🗄️ MySQL](#️-mysql)
 
 ---
 
+### 1.⚛️ ReactJS
 
-## 💻 Công nghệ sử dụng  
+**ReactJS** là thư viện JavaScript mã nguồn mở do **Meta (Facebook)** phát triển, ra mắt năm **2013**, được dùng để xây dựng **giao diện người dùng (UI)** động, linh hoạt và có khả năng tái sử dụng cao.  
+Hiện có hơn **94.000 website** và **1.300+ developer** đang sử dụng ReactJS nhờ tính **đơn giản, hiệu năng cao và thân thiện**.
 
-| Thành phần | Công nghệ | Mô tả |
-|-------------|------------|-------|
-| **Frontend** | ⚛️ ReactJS (JSX, Virtual DOM, Component-based) | Xây dựng giao diện động, thân thiện và hiệu năng cao |
-| **Backend** | ☕ Java + Spring Boot + Spring Security | Xử lý logic nghiệp vụ, RESTful API, xác thực và phân quyền |
-| **Database** | 🗄️ MySQL | Lưu trữ dữ liệu có cấu trúc, hỗ trợ truy vấn nhanh và an toàn |
-| **ORM** | 🔗 JPA / Hibernate | Mapping dữ liệu giữa đối tượng Java và cơ sở dữ liệu |
-| **Khác** | 🧱 HTML, CSS, API, MVC | Cấu trúc chuẩn mô hình 3 lớp, dễ mở rộng và bảo trì |
+### 🔹 Tính năng nổi bật
+- **JSX:** Kết hợp giữa JavaScript và HTML, cho phép hiển thị giao diện ngay trong quá trình phát triển.  
+- **Component-Based:** Chia nhỏ giao diện thành các component độc lập, dễ tái sử dụng và bảo trì.  
+- **Props & State:** Quản lý và truyền dữ liệu linh hoạt giữa các component.  
+- **Virtual DOM:** Tăng tốc độ render và tối ưu hiệu suất khi giao diện thay đổi.  
+- **One-Way Data Flow:** Luồng dữ liệu một chiều giúp ứng dụng dễ kiểm soát và giảm lỗi.
 
----
-
-## 🧩 Yêu cầu hệ thống
-
-### 🔹 Yêu cầu chức năng
-- **Người tìm việc**: Đăng ký, đăng nhập, tìm kiếm, ứng tuyển, theo dõi hồ sơ.  
-- **Doanh nghiệp**: Đăng tin, quản lý tin tuyển dụng, xem ứng viên.  
-- **Admin**: Quản lý người dùng, việc làm, danh mục, thống kê dữ liệu.
-
-### 🔹 Yêu cầu phi chức năng
-- Giao diện **thân thiện, responsive** trên mọi thiết bị.  
-- Dữ liệu được **kiểm tra, ràng buộc và bảo mật** (CSRF, XSS, SQL Injection).  
-- Hiệu năng tốt, **tìm kiếm nhanh, phản hồi mượt mà**.  
-- Hệ thống có khả năng **sao lưu và phục hồi dữ liệu** khi xảy ra sự cố.
-
- ### 🔹 Cài đặt hệ thống
-- **Frontend (ReactJS):**  
-  - Tổ chức theo component, dùng React Router và Axios kết nối API.  
-  - Sử dụng state management (useState, useEffect) để đồng bộ dữ liệu.  
-- **Backend (Spring Boot):**  
-  - API RESTful: `/api/users`, `/api/jobs`, `/api/applications`.  
-  - Bảo mật bằng **Spring Security + JWT Token**.  
-  - Giao tiếp với MySQL qua **JPA/Hibernate**.  
-- **Database (MySQL):**  
-  - Dữ liệu quan hệ được ánh xạ tự động thông qua entity class. 
+### 💡 Lý do sử dụng
+- Dễ xây dựng **ứng dụng web động** với ít mã hơn.  
+- Tối ưu hiệu năng nhờ cơ chế Virtual DOM.  
+- Giảm thời gian phát triển nhờ **tái sử dụng component**.  
+- Dễ mở rộng, bảo trì, và có cộng đồng lớn hỗ trợ.
 
 ---
 
-## 🏁 Hướng phát triển
-- Tích hợp **AI gợi ý việc làm** theo hồ sơ ứng viên.  
-- Phát triển **ứng dụng di động (React Native).**  
-- Bổ sung **hệ thống đánh giá và phản hồi** giữa doanh nghiệp và ứng viên.  
-- Mở rộng kết nối API với các nền tảng tuyển dụng lớn.
+### 2.☕ Ngôn Ngữ Lập Trình Java
+
+**Java** là ngôn ngữ lập trình **hướng đối tượng** do **Sun Microsystems (nay là Oracle)** phát triển.  
+Nhờ chạy được trên nhiều nền tảng thông qua **Java Virtual Machine (JVM)**, Java trở thành ngôn ngữ **ổn định, bảo mật và phổ biến** trong phát triển ứng dụng doanh nghiệp.
+
+### 🔹 Ưu điểm chính
+- **Đa nền tảng:** “Write once, run anywhere”.  
+- **Thư viện chuẩn phong phú:** Hỗ trợ đầy đủ về dữ liệu, mạng, bảo mật, giao diện, đa luồng.  
+- **Quản lý bộ nhớ tự động:** Garbage Collector giúp tránh rò rỉ bộ nhớ.  
+- **Bảo mật cao:** Cơ chế phân quyền và mã hóa mạnh.  
+- **Công cụ mạnh mẽ:** IntelliJ IDEA, Eclipse, NetBeans,...
 
 ---
 
-## 💼 Hướng Dẫn Cài Đặt & Chạy Ứng Dụng Tìm Việc Làm
+### 3.🌱 Spring Framework
+
+**Spring Framework** là **framework mã nguồn mở** cho **Java**, được phát triển năm **2003** bởi **Rod Johnson**.  
+Spring giúp **đơn giản hóa phát triển ứng dụng Java**, đặc biệt là **ứng dụng web và doanh nghiệp**.
+
+### 🔹 Đặc điểm chính
+- **Dependency Injection (DI):** Quản lý phụ thuộc tự động, giảm độ phức tạp.  
+- **Aspect-Oriented Programming (AOP):** Tách biệt logic nghiệp vụ và kỹ thuật.  
+- **Kiến trúc 3 tầng:** Presentation, Business, Data Layer — rõ ràng, dễ bảo trì.  
+- **Tích hợp linh hoạt:** Hỗ trợ Hibernate, JPA, JDBC, RESTful API,...
+
+### 💡 Ưu điểm
+- Giúp **phát triển nhanh, bảo trì dễ**.  
+- Cấu trúc rõ ràng, **dễ kiểm thử và mở rộng**.  
+- Phù hợp cho **ứng dụng web và hệ thống doanh nghiệp lớn**.
+
+---
+
+### 4.🗄️ MySQL
+
+**MySQL** là **hệ quản trị cơ sở dữ liệu quan hệ (RDBMS)** mã nguồn mở, thuộc **Oracle Corporation**.  
+MySQL được ưa chuộng nhờ **hiệu suất cao**, **bảo mật tốt**, và **miễn phí**, phù hợp cho cả dự án cá nhân lẫn doanh nghiệp.
+
+### 🔹 Đặc trưng
+- **Kiến trúc Client/Server** qua giao thức TCP/IP.  
+- **Xử lý truy vấn SQL** nhanh và ổn định.  
+- **Bảo mật:** Hỗ trợ SSL, xác thực người dùng.  
+- **Phù hợp ứng dụng web quy mô lớn.**
+
+### 🔹 Các thuật ngữ thường dùng
+- **Database:** Tập hợp bảng lưu trữ dữ liệu.  
+- **Table:** Lưu dữ liệu theo hàng (row) và cột (column).  
+- **Primary Key / Foreign Key:** Xác định và liên kết dữ liệu giữa các bảng.  
+- **Index:** Tăng tốc độ truy vấn.  
+- **Query:** Lệnh SQL thao tác dữ liệu.  
+- **Join:** Kết nối dữ liệu từ nhiều bảng.  
+- **View / Stored Procedure / Trigger:** Hỗ trợ xử lý logic trong CSDL.  
+- **Transaction:** Đảm bảo tính toàn vẹn dữ liệu (ACID).  
+- **Backup & Replication:** Sao lưu và nhân bản dữ liệu an toàn.
+
+---
+
+## III.💼 Hướng Dẫn Cài Đặt & Chạy Ứng Dụng Tìm Việc Làm
 
 -	  Clone project về máy.
 -	  Frontend (ReactJS)
@@ -117,7 +223,7 @@ Hệ thống gồm **hai phần chính**:
 
 ---
 
-## 🧮 4. Cài Đặt & Chạy Backend (Spring Boot)
+### 🧮 4. Cài Đặt & Chạy Backend (Spring Boot)
 
 **Bước 1:** Mở thư mục `WebTimViecLam` trong IDE (Eclipse hoặc IntelliJ)
 
@@ -208,9 +314,42 @@ Giao diện admin chạy tại:
 
 ---
 
+## IV. Phân Tích Thiết Kế Và Cài Đặt Hệ Thống 
+
+### 1.Phân Tích Chức Năng Hệ Thống 
+### 1.1 Sơ đồ use case tổng thể 
+
+<img width="909" height="713" alt="image" src="https://github.com/user-attachments/assets/d00dc89a-2e9d-4c71-be97-e946a905a370" />
+
+<p align="center"><em>Biểu đồ Usecase tổng quát</em></p>
+
+### 1.2 Đặc tả usecase
+### *a. Usecase đăng kí tài khoản*
+<img width="706" height="293" alt="image" src="https://github.com/user-attachments/assets/c88ea1ea-c84a-425f-b2e7-add3094f2609" />
+
+| **ID** | UC01 |
+|:--|:--|
+| **Name** | Đăng ký tài khoản ứng viên/doanh nghiệp |
+| **Brief description** | Cho phép người dùng tạo tài khoản mới để sử dụng các chức năng của hệ thống. |
+| **Actors** | Người dùng chưa có tài khoản |
+| **Pre-conditions** | - Người dùng chưa có tài khoản trên hệ thống.<br>- Người dùng có địa chỉ email hợp lệ. |
+| **Basic flow** | 1. Người dùng truy cập trang **Đăng ký**.<br>2. Hệ thống hiển thị **form đăng ký**.<br>3. Người dùng nhập đầy đủ thông tin và nhấn **"Đăng ký"**.<br>4. Hệ thống kiểm tra:<br>&nbsp;&nbsp;&nbsp;• Các trường bắt buộc không được để trống.<br>&nbsp;&nbsp;&nbsp;• Email đúng định dạng.<br>&nbsp;&nbsp;&nbsp;• Email chưa tồn tại trong hệ thống.<br>5. Nếu hợp lệ, hệ thống:<br>&nbsp;&nbsp;&nbsp;• Lưu thông tin người dùng vào cơ sở dữ liệu.<br>&nbsp;&nbsp;&nbsp;• Thông báo: **“Đăng ký thành công.”**<br>6. Hệ thống chuyển về trang đăng nhập. |
+| **Alternative flow** | None |
+| **Result** | Người dùng đăng ký thành công sẽ có một tài khoản cố định trong hệ thống. |
+| **Exceptions** | None |
+
+### *b.Usecase đăng nhập hệ thống*
+
+<img width="611" height="234" alt="image" src="https://github.com/user-attachments/assets/a7c5c5d1-6dfb-48ec-93de-4c3a5927a7ec" />
+
+
 **Sơ đồ class diagram**:
 
 ![image alt](https://github.com/nuwquynn8305/OOP_N03_25_26_NQuynh_VQuynh_Duc_/blob/b84c372f26edb093841cf86e1d04133c10d1f9ea/classs.jpg?raw=true)
+
+
+
+
 
 ---
 
@@ -256,6 +395,10 @@ Các chức năng chính của hệ thống đã được triển khai đầy đ
 Phần mềm đã được hoàn thiện với giao diện thân thiện, chức năng đầy đủ và cơ sở dữ liệu ổn định, đảm bảo khả năng mở rộng và vận hành thực tế.
 
 ---
+
+## Phân Tích Thiết Kế Và Cài Đặt Hệ Thống
+
+
 
 ### Minh Họa Giao Diện, Chức Năng Chính
 
